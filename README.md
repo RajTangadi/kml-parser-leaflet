@@ -1,12 +1,63 @@
-# React + Vite
+📌 What's in the KML File?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LineString Example: A simple line with three coordinates.
 
-Currently, two official plugins are available:
+MultiLineString Example: Two separate lines.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Point Example: A single point.
 
-## Expanding the ESLint configuration
+📥 How to Download the KML File
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Copy the XML content below.
+
+Open a text editor (e.g., Notepad, VS Code, Sublime Text).
+
+Paste the content into the editor.
+
+Save the file with a .kml extension, e.g., example.kml.
+
+📝 KML File Content
+
+```
+
+<?xml version="1.0" encoding="UTF-8"?>
+        <kml xmlns="http://www.opengis.net/kml/2.2">
+        <Document>
+        <name>Example KML File</name>
+        <description>This is an example KML file for testing.</description>
+        <Placemark>
+        <name>LineString Example</name>
+        <LineString>
+        <coordinates>
+        -122.0822035425683,37.42228990140251,0
+        -122.0819561432097,37.42159782703844,0
+        -122.0816520960159,37.42092723492599,0
+        </coordinates>
+        </LineString>
+        </Placemark>
+        <Placemark>
+        <name>MultiLineString Example</name>
+        <MultiGeometry>
+        <LineString>
+        <coordinates>
+        -122.083,37.421,0
+        -122.084,37.422,0
+        </coordinates>
+        </LineString>
+        <LineString>
+        <coordinates>
+        -122.085,37.423,0
+        -122.086,37.424,0
+        </coordinates>
+        </LineString>
+        </MultiGeometry>
+        </Placemark>
+        <Placemark>
+        <name>Point Example</name>
+        <Point>
+        <coordinates>-122.0822035425683,37.42228990140251,0</coordinates>
+        </Point>
+        </Placemark>
+        </Document>
+        </kml>
+```
