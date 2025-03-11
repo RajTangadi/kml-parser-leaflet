@@ -1,25 +1,23 @@
 📌 What's in the KML File?
 
-LineString Example: A simple line with three coordinates.
+- LineString Example: A simple line with three coordinates.
+- MultiLineString Example: Two separate lines.
 
-MultiLineString Example: Two separate lines.
-
-Point Example: A single point.
+- Point Example: A single point.
 
 📥 How to Download the KML File
 
-Copy the XML content below.
+1. Copy the XML content below.
 
-Open a text editor (e.g., Notepad, VS Code, Sublime Text).
+2. Open a text editor (e.g., Notepad, VS Code, Sublime Text).
 
-Paste the content into the editor.
+3. Paste the content into the editor.
 
-Save the file with a .kml extension, e.g., example.kml.
+4. Save the file with a .kml extension, e.g., example.kml.
 
 📝 KML File Content
 
 ```
-
 <?xml version="1.0" encoding="UTF-8"?>
         <kml xmlns="http://www.opengis.net/kml/2.2">
         <Document>
